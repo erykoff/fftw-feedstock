@@ -54,6 +54,7 @@ requirements:
     - {{ posix }}autoconf
     - {{ posix }}automake-wrapper        # [win]
     - {{ posix }}automake                # [not win]
+    - libtool # [unix]
   host:
     - {{ mpi }}  # [mpi != 'nompi']
     - llvm-openmp >=4.0.1  # [osx]
